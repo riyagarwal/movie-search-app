@@ -1,33 +1,30 @@
+import { useNavigate } from "react-router-dom";
 import "./Card.css";
-import MovieInfo from "../movie-info/MovieInfo";
 
-// function Card({ apiKey, src, title, type, year, id }) {
-//   const handleClick = (id) => {
-//     <MovieInfo id={id} />;
-//   };
+function Card({ movie }) {
+  const navigate = useNavigate();
 
-//   return (
-//     <div>
-//       {console.log(title)}
-//       <img src={src} />
-//       <ul>
-//         <li>Title: {title}</li>
-//         <li>Type: {type}</li>
-//         <li>Year: {year}</li>
-//       </ul>
-//       <button
-//         onClick={() => {
-//           handleClick(id);
-//         }}
-//       >
-//         Know More
-//       </button>
-//     </div>
-//   );
-// }
-
-const Card = () => {
-    return <div>Card component</div>
+  console.log(movie);
+  return (
+    <div className="card">
+      <div className="img-container">
+        <img src={movie.Poster} />
+      </div>
+      <ul>
+        <li>Title: {movie.Title}</li>
+        <li>Type: {movie.Type}</li>
+        <li>Year: {movie.Year}</li>
+      </ul>
+      {/* <button
+        className="btn know_more_btn"
+        onClick={() => {
+          navigate(`/movies/${movie.imdbID}`);
+        }}
+      >
+        Know More
+      </button> */}
+    </div>
+  );
 }
 
 export default Card;

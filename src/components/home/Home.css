@@ -2,14 +2,15 @@
     margin: 0;
     padding: 0;
 }
-nav {
-    margin: 0.8em 2em;
-    font-size: 1.2rem;
+
+.home-container{
+    margin-bottom: 4em;
 }
 
 .body {
     margin-top: 3rem;
-    margin-left: 2em;
+    margin-bottom: 3rem;
+    margin-left: 4em;
 }
 
 input{
@@ -17,9 +18,15 @@ input{
     padding: 0.5em;
     border-radius: 5px;
     margin-top: 1rem;
+    outline: none;
+    border: none;
+    background-color: inherit;
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: 1.2rem;
 }
 
-button{
+.searchBtn{
     background-color: white;
     color: black;
     padding: 10px 20px;
@@ -28,4 +35,28 @@ button{
     font-weight: 500;
     margin-top: 1rem;
     cursor: pointer;
+}
+
+h3{
+    margin-left: 3.4em;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    row-gap: 3rem;
+    justify-items: center;
+    margin-top: 2em;
+    grid-auto-flow: row;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.error{
+    color: red;
+    margin-left: 3.4em;
+    font-size: 1.2rem;
+    margin-top: -1em;
 }
