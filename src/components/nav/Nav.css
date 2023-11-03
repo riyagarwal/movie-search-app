@@ -3,7 +3,7 @@
     margin-left: 3.4em;
     font-size: 1.2rem;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: baseline;
 }
 

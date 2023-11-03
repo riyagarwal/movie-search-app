@@ -8,12 +8,18 @@ function Card({ movie }) {
   return (
     <div className="card">
       <div className="img-container">
-        <img src={movie.Poster} />
+        <img src={movie.Poster} alt="movie poster" />
       </div>
       <ul>
-        <li>Title: {movie.Title}</li>
-        <li>Type: {movie.Type}</li>
-        <li>Year: {movie.Year}</li>
+        <li>
+          <b>Title:</b> {movie.Title}
+        </li>
+        <li>
+          <b>Type:</b> {movie.Type}
+        </li>
+        <li>
+          <b>Year:</b> {movie.Year}
+        </li>
       </ul>
       <div className="btn">
         <button
