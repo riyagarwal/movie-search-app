@@ -1,9 +1,25 @@
-nav {
-    margin: 0.8em 0;
-    margin-left: 3.8em;
+.nav {
+    margin: 0.2em 0;
+    margin-left: 3.4em;
     font-size: 1.2rem;
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+}
+
+.heading{
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    margin: 10px;
+}
+
+.subheading{
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    margin: 10px;
 }
 
 hr{
-    margin-left: -5%;
+    width: 99%;
+    margin: auto;
 }

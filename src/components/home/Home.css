@@ -42,12 +42,10 @@ h3{
 }
 
 .card-container {
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    row-gap: 3rem;
-    justify-items: center;
-    margin-top: 2em;
-    grid-auto-flow: row;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 ul{

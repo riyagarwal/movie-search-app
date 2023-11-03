@@ -5,10 +5,6 @@ import './App.css';
 
 function App() {
   return (
-    // <div className="App">
-    //   App
-    // </div>
-
     <Routes>
       <Route path='/' element={<Home />} />
       <Route path='/movies/:imdbID' element={<MovieInfo />} />

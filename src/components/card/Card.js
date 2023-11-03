@@ -15,14 +15,16 @@ function Card({ movie }) {
         <li>Type: {movie.Type}</li>
         <li>Year: {movie.Year}</li>
       </ul>
-      {/* <button
-        className="btn know_more_btn"
-        onClick={() => {
-          navigate(`/movies/${movie.imdbID}`);
-        }}
-      >
-        Know More
-      </button> */}
+      <div className="btn">
+        <button
+          className="know_more_btn"
+          onClick={() => {
+            navigate(`/movies/${movie.imdbID}`);
+          }}
+        >
+          Know More
+        </button>
+      </div>
     </div>
   );
 }

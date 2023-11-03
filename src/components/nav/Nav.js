@@ -1,11 +1,16 @@
-import "./Nav.css"
+import "./Nav.css";
 
 function Nav() {
   return (
-    <div>
-      <nav>Movies App</nav>
+    <>
+      <div className="nav">
+        <h2 className="heading">Find My Movie</h2>
+        <h4 className="subheading">
+          Your one stop destination for details of your favorite movies!
+        </h4>
+      </div>
       <hr />
-    </div>
+    </>
   );
 }
 

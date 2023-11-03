@@ -49,7 +49,7 @@ function Home() {
     <div className="home-container">
       <Nav />
       <div className="body">
-        <h2>Search For Movies By Their Title</h2>
+        <h2 style={{ fontWeight: "400" }}>Search For Movies By Their Title</h2>
         <input placeholder="Search..." onChange={handleChange} />
         <br />
         <button onClick={handleSearch} className="searchBtn">
